@@ -1,0 +1,52 @@
+p{
+    display: inline-flex;
+    margin:10px;
+    margin-right:0px;
+}
+a:any-link{
+    color:  black;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    height:30px;
+    width:150px;
+  }
+.header{
+    display: inline-flex;
+    margin-top:20px;
+    margin-right: 0px;
+    margin-left: 8%;
+    margin-bottom: 10px;
+}
+
+#hr{
+    margin-left:8%;
+}
+
+#line{
+    margin-top: 30px;
+    line-height: 1em;
+    font-size: 22px;
+    height:10px;
+    width:300px;
+    font-weight: bolder;
+    font-family: Arial;
+}
+.img1{
+    height: 75px;
+    width: 75px;
+}
+button{
+    margin:10px;
+    border: 1px rgb(168, 164, 164) solid;
+    background-color: rgb(236, 236, 245);
+    border-radius:5px ;
+    font-weight: bold;
+    height: 30px;
+    width:200px;
+}
+.rightside{
+    display: inline-flex;
+    margin-left: 200px;
+}

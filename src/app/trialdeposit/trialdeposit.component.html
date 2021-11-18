@@ -1,0 +1,20 @@
+<div class="deposit">
+<form class="centerbox">
+  <div name="line1"id="line1">Let's Verify Your Bank Account</div>
+  <label for="d1">Micro-Deposit #1</label>
+  <input type="text" class= "tab" name="d1" id="d1" [(ngModel)]="microDeposit1"> <br/><br/>
+  <label for="d2">Micro-Deposit #2</label>
+  <input type="text" class = "tab" name="d2" id="d2" [(ngModel)]="microDeposit2"> <br/><br/>
+  <button type="button" class="cancel" data-dismiss="sidebox">CANCEL</button>
+  <button type="button" class="add" (click)="verify();open(content)">ADD PAYMENT SOURCE</button>
+</form>
+</div>
+
+<ng-template #content let-modal>
+    <div class="modal-body">
+       {{message}}
+      <button type="button" class="trial" (click)="modal.close('Save click')">CLOSE</button>
+    </div>
+  </ng-template>
+
+

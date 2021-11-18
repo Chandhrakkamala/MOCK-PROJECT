@@ -1,0 +1,37 @@
+<ng-template #content let-modal>
+  <div class="modal-body">
+    <p name="line1"id="line1">Let's Verify Your Bank Account</p>
+    <div name="line2"id="line2">
+      Check for two deposits of less than $1 in your non-Citibank account within 3 business days.<br/>
+      Sign on to [Partner Name] within 30 days to verify the trail deposits were credited to your external account.
+    </div><br/>
+    <button type="button" class="trial" (click)="navigate();modal.close('Save click')">MAKE A TRIAL DEPOSIT</button>
+  </div>
+</ng-template>
+
+<form class="sidebox" >
+  <div class="heading">
+    <img src="/assets/img/image2.PNG"class="img2">
+    Enter your information
+  </div>
+  <hr/>
+  <label for="accountType">Account Type</label><br/>
+  <select id="accountType" class="tab">
+    <option value="checking">Checking</option>
+    <option value="savings">Savings</option>
+  </select><br/><br/>
+  <label for="rn">ABA Routing Number</label>
+  <br/><input type="text" class= "tab" name="rn" id="rn" [(ngModel)]= "routingNumber">
+  <br/><br/>
+  <label for="acc">Bank Account Number</label>
+  <br/><input type="text" class = "tab" name="acc" id="acc"> <br/><br/>
+  <label for="acc_verify">Confirm Bank Account Number</label>
+  <br/><input type="text" class = "tab" name="acc_verify" id="acc_verify"> <hr/>
+  <label for="nickname">Nickname (Optional)</label>
+  <br/><input type="text" class ="tab" name="nickname" id="nickname"> <br/><br/>
+  <input type="checkbox" id="paymentSource" name="paymentSource" value="True"> 
+  <label for="paymentSource"><p>Set as default payment source</p></label><br/>
+  <hr/><br/>
+  <button type="button" class="cancel" data-dismiss="sidebox">CANCEL</button>
+  <button type="button" class="add" (click)="open(content)">ADD PAYMENT SOURCE</button>
+</form>

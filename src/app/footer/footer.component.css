@@ -1,0 +1,47 @@
+.footer{
+    margin-left: 8%;
+    font-family: Arial;
+    margin-top:10%
+}
+
+.tab{
+    height:80px;
+    width:315px;
+    border-radius: 5px;
+    background-color: rgb(241, 241, 252);
+}
+
+.footer2{
+    display:inline-flex;
+}
+
+.right{
+    height:700px;
+    width:500px;
+}
+
+.left{
+    height:700px;
+    width:400px;
+}
+
+.img3{
+    height:27px;
+    width:27px;
+    margin-top:3px;
+    margin-right:10px;
+}
+
+.img4{
+    height:30px;
+    width:27px;
+    margin-top:3px;
+    margin-right:10px;
+    margin-left:150px;
+}
+
+.img5{
+    height:50px;
+    width:60px;
+    margin-top:2px;
+}

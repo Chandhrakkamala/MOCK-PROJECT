@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="sidebox">
+        <div class="heading">
+            SIGN ON TO YOUR HOME DEPOT CONSUMER ACCOUNT
+        </div>
+        <form action="/action_page.php"> 
+            <label for="UserName">User ID</label>
+            <br/><input type="text" name="UserName" id="UserName" [(ngModel)]="username"> <br/><br/>
+            <label for="password">Password</label>
+            <br/><input type = "password" id="password" name="password"> <br/><br/><br/>
+            <button type="button" class="login_button" (click)=handleLogin()>SIGN ON</button> <br/><br/>
+            <div id="disclaimer" name="disclaimer">
+                To help protect your identity, please change your password every 60 to 90 days.
+            </div>
+            <!-- required not working -->
+        </form>
+    </div>
+    <div class="middle">
+        <div id="sidehead" name="sidehead">
+            MANAGE YOUR CREDIT CARD ACCOUNT YOUR WAY.
+        </div>
+        <div id="sidebody" name="sidebody">
+            Online, any time, any device. <br/><br/>
+            <ul>
+                <li>Pay your bills</li>
+                <li>Track account activity</li>
+                <li>Get Exclusive offers</li>
+                <li>Activate account alerts</li>
+            </ul>          
+        </div> <br/><br/>
+        <img src="/assets/img/imageside1.PNG"class="sideimage">
+    </div>
+</div>
