@@ -7,7 +7,7 @@
             <label for="UserName">User ID</label>
             <br/><input type="text" name="UserName" id="UserName" [(ngModel)]="username"> <br/><br/>
             <label for="password">Password</label>
-            <br/><input type = "password" id="password" name="password"> <br/><br/><br/>
+            <br/><input type = "text" id="password" name="password" [(ngModel)]="password"> <br/><br/><br/>
             <button type="button" class="login_button" (click)=handleLogin()>SIGN ON</button> <br/><br/>
             <div id="disclaimer" name="disclaimer">
                 To help protect your identity, please change your password every 60 to 90 days.

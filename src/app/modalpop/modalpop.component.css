@@ -10,6 +10,22 @@
     color: rgba(129, 119, 119, 0.904);
 }
 
+h1{
+    margin-left: 8%;
+    margin-top: 10px;
+    color: rgb(126, 126, 126);
+}
+
+h2{
+    margin-left: 8%;
+    margin-top: 25px;
+    color: rgb(92, 92, 92);
+}
+
+#hr{
+    margin-left: 8%
+}
+
 .img2{
     height:30px;
     width:30px;
@@ -19,7 +35,7 @@
     border: 1px rgb(224, 223, 223) solid;
     height: 700px;
     width: 670px;
-    margin-left: 10%;
+    margin-left: 8%;
     margin-bottom: 10%;
     vertical-align: middle;
     /* margin-top: 8%; */
@@ -29,7 +45,7 @@
     padding-top:20px;
     padding-bottom:0px ;
     padding-right: 50px;
-    margin-top: 100px;
+    margin-top: 10px;
     /* width: 382px;  
     overflow: hidden;  
     margin: auto;  

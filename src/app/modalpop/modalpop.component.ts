@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -10,11 +10,17 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 export class ModalpopComponent implements OnInit{
   closeResult = '';
   routingNumber = '';
+  userName :String;
   
-  constructor(private modalService:NgbModal,private router: Router) { }
+  constructor(private modalService:NgbModal,
+              private router: Router,
+              private route:ActivatedRoute
+    ) { }
 
   ngOnInit(){
-    
+    //snapshot.params gives a snapshot of the parameters passed
+    console.log(this.route.snapshot.params['name'])
+    this.userName=this.route.snapshot.params['name'];
   }
 
   open(content) {

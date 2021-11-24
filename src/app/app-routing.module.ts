@@ -9,7 +9,7 @@ const routes: Routes = [
   {path:'',component:LoginComponent},
   {path: 'login', component: LoginComponent},
   {path:'welcome',component: WelcomeComponent},
-  {path:'modal',component: ModalpopComponent},
+  {path:'modal/:name',component: ModalpopComponent},
   {path:'trialmodal',component: TrialdepositComponent}
 ];
 
